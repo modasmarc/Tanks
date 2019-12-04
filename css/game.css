@@ -1,0 +1,31 @@
+.game {
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #eee;
+    position: relative;
+}
+    .game > .ground {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .game > .ground.grass {
+        background-image: url(../img/land/tileGrass1.png);
+    }
+    .game > .ground.sand {
+        background-image: url(../img/land/tileSand1.png);
+    }
+        .game > .ground > .tank {
+            display: inline-block;
+            width: 42px;
+            height: 46px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: contain;
+            object-position: center;
+        }
