@@ -33,4 +33,3 @@ class Bullet {
 }
 
 export default Bullet;
-© 2019 GitHub, Inc.
