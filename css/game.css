@@ -6,6 +6,41 @@
     background-color: #eee;
     position: relative;
 }
+.game > .info {
+    display: inline-block;
+    width: 300px;
+    position: fixed;
+    top: 20px;
+    z-index: 2;
+}
+    .game > .info.player-0 {
+        left: 20px;
+    }
+    .game > .info.player-1 {
+        right: 20px;
+    }
+    .game > .info > * {
+        display: inline-block;
+        width: 100%;
+        font-weight: bold;
+        font-size: 20px;
+    }
+        .game > .info > * > span {
+            display: inline-block;
+            font-weight: normal;
+        }
+    .game > .info > .speed {
+        display: inline-block;
+        width: 100%;
+        font-size: 30px;
+        line-height: 60px;
+    }
+        .game > .info > .speed > span {
+            display: inline-block;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        
     .game > .ground {
         display: inline-block;
         position: absolute;
